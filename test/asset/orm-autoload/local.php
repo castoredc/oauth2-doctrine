@@ -1,7 +1,7 @@
 <?php
-$driverClass = class_exists('Doctrine\DBAL\Driver\PDOSqlite\Driver') ?
-    'Doctrine\DBAL\Driver\PDOSqlite\Driver' :
-    'Doctrine\DBAL\Driver\PDO\Sqlite\Driver'
+$driverClass = class_exists('Doctrine\DBAL\Driver\PDO\SQLite\Driver') ?
+    'Doctrine\DBAL\Driver\PDO\SQLite\Driver' :
+    'Doctrine\DBAL\Driver\PDOSqlite\Driver'
 ;
 
 return [
